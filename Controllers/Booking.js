@@ -134,21 +134,6 @@ const getCustomerRoomData = async (req, res) => {
 
 const bookingCount = async (req, res) => {
   try {
-    // const { customername } = req.params;
-    // const customerBookedCount = bookingRoom.filter((e) => {
-      //   console.log(e.customername);
-      //   e.customername === customername
-      
-    // })
-    // console.log(customerBookedCount);
-    // res.status(200).json({
-      //   message: 'Fetched Customer Booing data with count',
-      //   customername,
-      //   booking_count: customerBookedCount.length,
-      //   bookings: customerBookedCount
-      // })
-      // const bookingCount = async (req, res) => {
-        //   try {
           const { customername } = req.params;
           console.log(customername);
           const customerBookedCount = bookingRoom.filter((booking) => booking.customername === customername);
